@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elif İçin Özel</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+            margin: 0;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            max-width: 500px;
+            margin: auto;
+            position: relative;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 28px;
+        }
+        p {
+            font-size: 20px;
+            color: #6a0572;
+            font-style: italic;
+        }
+        .buttons {
+            margin-top: 25px;
+        }
+        button {
+            font-size: 20px;
+            padding: 12px 24px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .yes {
+            background-color: #ff4d6d;
+            color: white;
+            box-shadow: 0 4px 10px rgba(255, 77, 109, 0.5);
+        }
+        .yes:hover {
+            background-color: #e63950;
+        }
+        .no {
+            background-color: #f76c6c;
+            color: white;
+            box-shadow: 0 4px 10px rgba(247, 108, 108, 0.5);
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Elif, sana bir şey sormak istiyorum...</h1>
+        <p>Gözlerini, toprağını doyamadım... Seninle her anı sonsuz yapmak istiyorum. ❤️</p>
+        <h2>Benimle çıkar mısın?</h2>
+        <div class="buttons">
+            <button class="yes" onclick="showLove()">Evet</button>
+            <button class="no" onclick="moveButton(this)">Hayır</button>
+        </div>
+    </div>
+
+    <script>
+        function showLove() {
+            alert("Harika! O zaman güzel bir plan yapalım ❤️");
+        }
+        function moveButton(button) {
+            button.style.left = Math.random() * (window.innerWidth - 100) + "px";
+            button.style.top = Math.random() * (window.innerHeight - 50) + "px";
+        }
+    </script>
+</body>
+</html>
